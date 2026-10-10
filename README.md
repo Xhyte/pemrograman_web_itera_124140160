@@ -42,9 +42,9 @@ Mini POS adalah aplikasi web kasir sederhana untuk kantin atau toko kampus. Kasi
 
 | Tampilan | Gambar |
 |---|---|
-| Form input utama | ![Form input](Images/Form input.png) |
-| Validasi error | ![Validasi error](Images/Validasi Error.png) |
-| Hasil perhitungan dan tabel | ![Hasil perhitungan](Images/Hasil Perhitungan.png) |
+| Form input utama | ![Form input](Images/Forminput.png) |
+| Validasi error | ![Validasi error](Images/ValidasiError.png) |
+| Hasil perhitungan dan tabel | ![Hasil perhitungan](Images/HasilPerhitungan.png) |
 
 ## Penjelasan Teknis Singkat
 
