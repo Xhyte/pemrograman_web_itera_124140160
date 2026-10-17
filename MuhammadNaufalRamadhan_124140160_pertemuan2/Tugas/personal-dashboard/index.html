@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard Tugas Kuliah</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar__title">
+      <h1>Dashboard Tugas Kuliah</h1>
+      <p id="today" class="muted"></p>
+    </div>
+
+    <section class="widgets" aria-label="Informasi harian">
+      <div class="widget" id="weather" aria-live="polite">
+        <span class="widget__label">Cuaca kampus ITERA</span>
+        <span class="widget__value" id="weatherText">Memuat cuaca...</span>
+      </div>
+      <div class="widget widget--quote" id="quote" aria-live="polite">
+        <span class="widget__label">Kutipan hari ini</span>
+        <span class="widget__value" id="quoteText">Memuat kutipan...</span>
+        <button type="button" id="quoteBtn" class="link-btn">Kutipan lain</button>
+      </div>
+    </section>
+  </header>
+
+  <main class="layout">
+    <section class="panel form-panel" aria-labelledby="formTitle">
+      <h2 id="formTitle">Tambah tugas</h2>
+      <form id="taskForm" novalidate>
+        <label for="title">Judul tugas</label>
+        <input id="title" name="title" type="text" maxlength="80" placeholder="Contoh: Laporan praktikum PAW" required>
+
+        <label for="course">Mata kuliah</label>
+        <input id="course" name="course" type="text" maxlength="40" placeholder="Contoh: Pengembangan Aplikasi Web">
+
+        <div class="row">
+          <div>
+            <label for="deadline">Deadline</label>
+            <input id="deadline" name="deadline" type="date">
+          </div>
+          <div>
+            <label for="priority">Prioritas</label>
+            <select id="priority" name="priority">
+              <option value="rendah">Rendah</option>
+              <option value="sedang" selected>Sedang</option>
+              <option value="tinggi">Tinggi</option>
+            </select>
+          </div>
+        </div>
+
+        <p id="formError" class="error" role="alert" hidden></p>
+
+        <div class="actions">
+          <button type="submit" id="submitBtn" class="btn btn--primary">Tambah tugas</button>
+          <button type="button" id="cancelBtn" class="btn" hidden>Batal</button>
+        </div>
+      </form>
+    </section>
+
+    <section class="panel list-panel" aria-labelledby="listTitle">
+      <div class="list-head">
+        <h2 id="listTitle">Daftar tugas</h2>
+        <div class="filters" role="group" aria-label="Filter tugas">
+          <button type="button" class="filter is-active" data-filter="all">Semua</button>
+          <button type="button" class="filter" data-filter="pending">Belum selesai</button>
+          <button type="button" class="filter" data-filter="done">Selesai</button>
+        </div>
+      </div>
+
+      <p id="stats" class="stats" aria-live="polite"></p>
+      <p id="status" class="muted" aria-live="polite"></p>
+      <ul id="taskList" class="task-list"></ul>
+    </section>
+  </main>
+
+  <footer class="footer muted">
+    Data tersimpan di browser (localStorage). Cuaca: Open-Meteo, kutipan: DummyJSON, contoh tugas awal: JSONPlaceholder.
+  </footer>
+
+  <!-- type="module" wajib agar import/export ES6 berjalan -->
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
