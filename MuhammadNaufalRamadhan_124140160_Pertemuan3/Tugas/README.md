@@ -36,9 +36,9 @@ npm test
 
 | Halaman | Screenshot |
 | ------- | ---------- |
-| Beranda (form + daftar buku) | `Screenshots/Beranda.png` |
-| Statistik | `Screenshots/Statistik.png` |
-| Hasil unit test (terminal) | `Screenshots/Test.png` |
+| Beranda (form + daftar buku) | [](Screenshots/Beranda.png) |
+| Statistik | [](Screenshots/Statistik.png) |
+| Hasil unit test (terminal) | [](Screenshots/Test.png) |
 
 ## Fitur React yang Digunakan
 
