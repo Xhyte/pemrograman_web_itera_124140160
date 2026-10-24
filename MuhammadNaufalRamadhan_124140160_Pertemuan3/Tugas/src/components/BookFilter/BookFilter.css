@@ -1,0 +1,9 @@
+.book-filter {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.book-filter select {
+  width: 200px;
+}
