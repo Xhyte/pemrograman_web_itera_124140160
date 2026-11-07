@@ -67,13 +67,13 @@ python main.py
 ## Screenshot Hasil Eksekusi
 
 ### Soal 1 - tugas1_bmi.py
-![Hasil Soal 1](screenshots/tugas1.png)
+| ![ Hasil Soal 1 ] | (screenshots/tugas1.png) |
 
 ### Soal 2 - tugas2_nilai.py
-![Hasil Soal 2](screenshots/tugas2.png)
+| ![Hasil Soal 2]| | (screenshots/tugas2.png) |
 
 ### Soal 3 - main.py
-![Hasil Soal 3](screenshots/main.png)
+| ![Hasil Soal 3] | (screenshots/main.png) |
 
 ## Catatan
 - Seluruh fungsi dilengkapi docstring (parameter dan nilai kembalian).
