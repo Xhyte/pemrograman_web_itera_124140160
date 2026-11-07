@@ -70,7 +70,7 @@ python main.py
 ![ Hasil Soal 1 ](Screenshots/tugas1.png)
 
 ### Soal 2 - tugas2_nilai.py  
-![Hasil Soal 2](Screenhots/tugas2.png)
+![Hasil Soal 2](Screenshots/tugas2.png)
 
 ### Soal 3 - main.py  
 ![Hasil Soal 3](Screenshots/main.png)
